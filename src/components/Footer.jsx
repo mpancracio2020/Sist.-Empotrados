@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // Components
 import SocialLinks from "./SocialLinks";
+import * as React from 'react';
 
 const StyledFooter = styled.footer`
   min-height: var(--min-footer-height);
