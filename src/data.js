@@ -1,4 +1,5 @@
 // Skills icons - https://icon-sets.iconify.design/
+import * as React from 'react';
 import { Icon } from "@iconify/react";
 
 // Navbar Logo image (uncomment below and import your image)
@@ -18,7 +19,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = mpancracio2020;
+export const githubUsername = "mpancracio2020";
 
 // Navbar Logo image
 export const navLogo = undefined;
