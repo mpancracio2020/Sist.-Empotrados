@@ -11,7 +11,7 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 // https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
-const root = ReactDOM.createRoot(document.getElementById("docs/"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Provider store={store}>
