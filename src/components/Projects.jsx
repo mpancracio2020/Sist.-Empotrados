@@ -58,15 +58,13 @@ export default function Projects() {
             </Container>
           )}
           {error && <h2 className="text-center">{error}</h2>}
-          <h2 className="text-center">
-              Oops, you do not have any GitHub projects yet...
-            </h2>
-          {/*!error && data.length === 0 && (
+          
+          {!error && data.length === 0 && (
             <h2 className="text-center">
               Oops, you do not have any GitHub projects yet...
             </h2>
-          )*/}
-          {/*mainProjects.length !== 0 && (
+          )}
+          {mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
                 {mainProjects.map(function ({
@@ -99,13 +97,13 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      All <Icon icon="icomoon-free:github" /> Projects
+                      All <Icon icon="solar:smart-vacuum-cleaner-outline" /> Projects
                     </Button>
                   </Link>
                 </Container>
               )}
             </>
-          )*/}
+          )}
         </Container>
       </section>
     </Element>
