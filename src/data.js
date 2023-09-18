@@ -85,7 +85,7 @@ export const filteredProjects = ["practice 1"];
 export const projectCardImages = [
   {
     name: "practice 1",
-    image: Logo,
+    image: "./images/vacuum.png",
   },
 ];
 
