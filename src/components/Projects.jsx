@@ -88,9 +88,9 @@ export default function Projects() {
                       />
                     </Col>
                   );
-                })*/}
+                })}
               </Row>
-              {/*data.length > 3 && (
+              {data.length > 3 && (
                 <Container className="text-center mt-5">
                   <Link to="/All-Projects">
                     <Button
@@ -103,9 +103,9 @@ export default function Projects() {
                     </Button>
                   </Link>
                 </Container>
-              )*/}
+              )}
             </>
-          )}
+          )*/}
         </Container>
       </section>
     </Element>
