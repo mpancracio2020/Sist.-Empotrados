@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react";
 import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/goodrobot.jpg";
+import HeroLight from "./images/goodroot.jpg";
 import HeroDark from "./images/badrobot.jpg";
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
