@@ -64,7 +64,7 @@ export default function Projects() {
               Oops, you do not have any GitHub projects yet...
             </h2>
           )}
-          {mainProjects.length !== 0 && (
+          {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
                 {mainProjects.map(function ({
@@ -103,7 +103,7 @@ export default function Projects() {
                 </Container>
               )}
             </>
-          )}
+          )*/}
         </Container>
       </section>
     </Element>
