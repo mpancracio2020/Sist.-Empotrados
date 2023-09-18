@@ -64,7 +64,7 @@ export default function Projects() {
               Oops, you do not have any GitHub projects yet...
             </h2>
           )}
-          Basic Vacuum Cleaner <Icon icon="solar:smart-vacuum-cleaner-outline" /> 
+            <h2 Basic Vacuum Cleaner <Icon icon="solar:smart-vacuum-cleaner-outline" /> </h2>
           {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
