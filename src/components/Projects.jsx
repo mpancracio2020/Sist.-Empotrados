@@ -71,16 +71,16 @@ export default function Projects() {
             
               <code>
                 <pre>
-                def parse_laser_data(laser_data, close_obj): \n
-                    laser = [] \n
-                    for i in range(45,135):\n
-                        dist = laser_data.values[i]\n
-                        angle = math.radians(i)\n
-                        laser += [(dist, angle)]\n
-                        print("distancia: ", dist)\n
-                        if (dist 	&#60 0,3):\n
-                          close_obj = True\n
-                    return close_obj\n
+                def parse_laser_data(laser_data, close_obj): ~{"\n"}
+                    laser = [] ~{"\n"}
+                    for i in range(45,135):~{"\n"}
+                        dist = laser_data.values[i]~{"\n"}
+                        angle = math.radians(i)~{"\n"}
+                        laser += [(dist, angle)]~{"\n"}
+                        print("distancia: ", dist)~{"\n"}
+                        if (dist 	&#60 0,3):~{"\n"}
+                          close_obj = True~{"\n"}
+                    return close_obj~{"\n"}
                 </pre>
                 </code>
           <img 
