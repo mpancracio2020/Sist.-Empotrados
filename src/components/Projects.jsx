@@ -65,7 +65,7 @@ export default function Projects() {
             </h2>
           )}
           <h2> Basic Vacuum Cleaner <Icon icon="solar:smart-vacuum-cleaner-outline" /> </h2> 
-          <h3>This practice consists of developing an iterative pseudo-navigation algorithm.</h3>
+          <div>This practice consists of developing an iterative pseudo-navigation algorithm.</div>
           {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
