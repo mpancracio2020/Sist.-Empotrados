@@ -68,8 +68,14 @@ export default function Projects() {
           <h2> Basic Vacuum Cleaner <Icon icon="solar:smart-vacuum-cleaner-outline" /> </h2> 
           <div>This practice consists of developing an iterative pseudo-navigation algorithm.
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
-          but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.</div>
-          <img src={ require('./images/laser_def.png) } />
+          but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
+          <img 
+          alt="Laser function" 
+          src={require("./images/laser_def.png")} 
+          style={{ height: "70px", paddingRight: "10px" }} 
+        /> 
+        <sp</div>
+        
           {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
