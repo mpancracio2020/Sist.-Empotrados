@@ -16,6 +16,7 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import LaserD from "./images/laser_def.png";
 
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -68,6 +69,7 @@ export default function Projects() {
           <div>This practice consists of developing an iterative pseudo-navigation algorithm.
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.</div>
+          <img src={ require('./images/laser_def.png) } />
           {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
