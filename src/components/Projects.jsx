@@ -73,7 +73,7 @@ export default function Projects() {
             alt="Laser function" 
             src={laserD} 
             height={350}
-            width={700}
+            width={450}
             style={{ alignSelf: 'center' }} 
         /> 
         </div>
