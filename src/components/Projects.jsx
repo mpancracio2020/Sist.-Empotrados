@@ -76,7 +76,7 @@ export default function Projects() {
                         angle = math.radians(i)
                         laser += [(dist, angle)]
                         print("distancia: ", dist)
-                        if (dist < 0,3):
+                        if (dist 	&#60 0,3):
                           close_obj = True
                     return close_obj</code></pre>
           <img 
