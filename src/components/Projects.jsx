@@ -69,15 +69,16 @@ export default function Projects() {
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
             <pre>
-              <code>def parse_laser_data(laser_data, close_obj):
-                    laser = []
-                    for i in range(45,135):
-                        dist = laser_data.values[i]
-                        angle = math.radians(i)
-                        laser += [(dist, angle)]
-                        print("distancia: ", dist)
-                        if (dist 	&#60 0,3):
-                          close_obj = True
+              <code>
+                def parse_laser_data(laser_data, close_obj): <br>
+                    laser = []<br>
+                    for i in range(45,135):<br>
+                        dist = laser_data.values[i]<br>
+                        angle = math.radians(i)<br>
+                        laser += [(dist, angle)]<br>
+                        print("distancia: ", dist)<br>
+                        if (dist 	&#60 0,3):<br>
+                          close_obj = True<br>
                     return close_obj</code></pre>
           <img 
             alt="Laser function" 
