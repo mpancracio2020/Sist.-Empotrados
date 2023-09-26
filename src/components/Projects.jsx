@@ -72,7 +72,7 @@ export default function Projects() {
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
           <img 
           alt="Laser function" 
-          src={laserDd} 
+          src={laserD} 
           style={{ height: "70px", paddingRight: "10px" }} 
         /> 
         </div>
