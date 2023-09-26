@@ -74,7 +74,7 @@ export default function Projects() {
           src={require("./images/laser_def.png")} 
           style={{ height: "70px", paddingRight: "10px" }} 
         /> 
-        <sp</div>
+        </div>
         
           {/*mainProjects.length !== 0 && (
             <>
