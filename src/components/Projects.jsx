@@ -16,9 +16,7 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
-import LaserD from "./images/laser_def.png";
 var laserD = require('./images/laser_def.png')
-
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
   const { theme } = useAppContext();
