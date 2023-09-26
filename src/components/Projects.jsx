@@ -68,10 +68,11 @@ export default function Projects() {
           <div>This practice consists of developing an iterative pseudo-navigation algorithm.
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
+          
           <img 
-          alt="Laser function" 
-          src={laserD} 
-          style={{ height: "70px", paddingRight: "10px" }} 
+            alt="Laser function" 
+            src={laserD} 
+            style={{ height: "100px", left: "50px" }} 
         /> 
         </div>
         
