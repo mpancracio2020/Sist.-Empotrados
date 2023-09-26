@@ -72,7 +72,9 @@ export default function Projects() {
           <img 
             alt="Laser function" 
             src={laserD} 
-            style={{ height: "100px", navLeft: "50px" }} 
+            height={350}
+            width={700}
+            style={{ alignSelf: 'center' }} 
         /> 
         </div>
         
