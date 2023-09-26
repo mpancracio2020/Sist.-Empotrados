@@ -68,7 +68,20 @@ export default function Projects() {
           <div>This practice consists of developing an iterative pseudo-navigation algorithm.
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
-          
+          <code>
+              <p>
+              def parse_laser_data(laser_data, close_obj):
+                  laser = []
+                  for i in range(45,135):
+                      dist = laser_data.values[i]
+                      angle = math.radians(i)
+                      laser += [(dist, angle)]
+                      print("distancia: ", dist)
+                      if (dist < 0.3):
+                        close_obj = True
+                  return close_obj
+              </p>
+          </code>
           <img 
             alt="Laser function" 
             src={laserD} 
