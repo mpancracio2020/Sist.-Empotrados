@@ -17,6 +17,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 import LaserD from "./images/laser_def.png";
+var laserD = require('./images/laser_def.png')
 
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -71,7 +72,7 @@ export default function Projects() {
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
           <img 
           alt="Laser function" 
-          src={require(Laser)} 
+          src={laserDd} 
           style={{ height: "70px", paddingRight: "10px" }} 
         /> 
         </div>
