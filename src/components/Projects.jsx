@@ -72,15 +72,15 @@ export default function Projects() {
               <code>
                 <pre>
                 def parse_laser_data(laser_data, close_obj): {"\n"}
-                    <span class="tab">laser = [] {"\n"}
-                    <span class="tab">for i in range(45,135):{"\n"}
-                        <span class="tab"><span class="tab">dist = laser_data.values[i]{"\n"}
-                        <span class="tab"><span class="tab">angle = math.radians(i){"\n"}
-                        <span class="tab"><span class="tab">laser += [(dist, angle)]{"\n"}
-                        <span class="tab"><span class="tab">print("distancia: ", dist){"\n"}
-                        <span class="tab">if (dist 	&#60 0,3):{"\n"}
-                          <span class="tab">close_obj = True{"\n"}
-                    <span class="tab">return close_obj{"\n"}
+                  {"\t"}laser = [] {"\n"}
+                    {"\t"}for i in range(45,135):{"\n"}
+                        {"\t"}{"\t"}dist = laser_data.values[i]{"\n"}
+                        {"\t"}{"\t"}angle = math.radians(i){"\n"}
+                        {"\t"}{"\t"}laser += [(dist, angle)]{"\n"}
+                        {"\t"}{"\t"}print("distancia: ", dist){"\n"}
+                        {"\t"}if (dist 	&#60 0,3):{"\n"}
+                          {"\t"}close_obj = True{"\n"}
+                  {"\t"}return close_obj{"\n"}
                 </pre>
                 </code>
           <img 
