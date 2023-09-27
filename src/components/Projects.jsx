@@ -16,6 +16,8 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+
+
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -133,7 +135,7 @@ export default function Projects() {
                 {"\t"}HAL.setV(angular_vel){"\n"}
                 {"\t"}HAL.setW(ang){"\n"}
                 {"\t"}print("cleaning spiral"){"\n"}
-                s{"\t"}tate_t = 0{"\n"}
+                {"\t"}state_t = 0{"\n"}
                 </pre>
                 </code>
             
@@ -153,6 +155,8 @@ export default function Projects() {
                 </pre>
               
             </code>
+
+            
           </div>
 
           <div>
@@ -196,6 +200,14 @@ export default function Projects() {
                   {"\t"}{"\t"}{"\t"}{"\t"}clock = False{"\n"}
                </pre>     
             </code>
+          </div>
+
+          <div>
+            Here is an example video:
+
+            <video controls width="250">
+              <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+            </video>
           </div>
         
           {/*mainProjects.length !== 0 && (
