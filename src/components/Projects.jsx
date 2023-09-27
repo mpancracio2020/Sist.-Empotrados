@@ -78,7 +78,7 @@ export default function Projects() {
                         {"\t"}{"\t"}angle = math.radians(i){"\n"}
                         {"\t"}{"\t"}laser += [(dist, angle)]{"\n"}
                         {"\t"}{"\t"}print("distancia: ", dist){"\n"}
-                        {"\t"}if (dist 	&#60 0,3):{"\n"}
+                        {"\t"}if (dist 	&#60; 0,3):{"\n"}
                           {"\t"}close_obj = True{"\n"}
                   {"\t"}return close_obj{"\n"}
                 </pre>
