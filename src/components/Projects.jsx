@@ -205,10 +205,10 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-            <body>
+            <html>
             <video data="https://youtu.be/xwCpgUhGOrc"
              width="560" height="315"></video>
-           </body>
+           </html>
           {/*mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
