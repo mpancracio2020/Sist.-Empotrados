@@ -97,21 +97,21 @@ export default function Projects() {
 
           <code>
                 <pre>
-                if (close_obj == True):
-                 {"\t"}time_begin = rospy.Time.now() # start to count seconds.
-                 {"\t"}clock = True
-                {"\t"} print("going back")
+                if (close_obj == True):{"\n"}
+                 {"\t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
+                 {"\t"}clock = True{"\n"}
+                {"\t"} print("going back"){"\n"}
             
-                 {"\t"}while(clock == True):
+                 {"\t"}while(clock == True):{"\n"}
             
-                   {"\t"} {"\t"}HAL.setV(back_vel)
+                   {"\t"} {"\t"}HAL.setV(back_vel){"\n"}
                   
-                   {"\t"} {"\t"}HAL.setW(1)
-                   {"\t"} {"\t"}time_end = rospy.Time.now() # check time now.
-                   {"\t"} {"\t"}duration = time_end.secs - time_begin.secs # check duration time from begin.
+                   {"\t"} {"\t"}HAL.setW(1){"\n"}
+                   {"\t"} {"\t"}time_end = rospy.Time.now() # check time now.{"\n"}
+                   {"\t"} {"\t"}duration = time_end.secs - time_begin.secs # check duration time from begin.{"\n"}
                   
-                   {"\t"} {"\t"}if (duration == 3):
-                     {"\t"} {"\t"}clock = False
+                   {"\t"} {"\t"}if (duration == 3):{"\n"}
+                     {"\t"} {"\t"}clock = False{"\n"}
                 </pre>
                 </code>
         
@@ -123,26 +123,26 @@ export default function Projects() {
 
             <code>
                 <pre>
-                if(mode == 0 and crashed == 0 and close_obj == False):
+                if(mode == 0 and crashed == 0 and close_obj == False):{"\n"}
       
-                  {"t"}if (straight_vel &lt 2.5):
+                  {"t"}if (straight_vel &lt; 2.5):{"\n"}
                   
-                  {"t"}{"t"}straight_vel += increment
+                  {"t"}{"t"}straight_vel += increment{"\n"}
                 
-                {"t"}HAL.setV(straight_vel)
-                {"t"}HAL.setW(0)
-                {"t"}print("cleaning straight")
-                {"t"}state_t = 0
+                {"t"}HAL.setV(straight_vel){"\n"}
+                {"t"}HAL.setW(0){"\n"}
+                {"t"}print("cleaning straight"){"\n"}
+                {"t"}state_t = 0{"\n"}
               
-              if (mode == 1 and crashed == 0 and close_obj == False):
-                {"t"}if (straight_vel &lt 2.5):
+              if (mode == 1 and crashed == 0 and close_obj == False):{"\n"}
+                {"t"}if (straight_vel &lt; 2.5):{"\n"}
                   
-                  {"t"}{"t"}straight_vel += increment
-                {"t"}angular_vel += increment
-                {"t"}HAL.setV(angular_vel)
-                {"t"}HAL.setW(ang)
-                {"t"}print("cleaning spiral")
-                s{"t"}tate_t = 0
+                  {"t"}{"t"}straight_vel += increment{"\n"}
+                {"t"}angular_vel += increment{"\n"}
+                {"t"}HAL.setV(angular_vel){"\n"}
+                {"t"}HAL.setW(ang){"\n"}
+                {"t"}print("cleaning spiral"){"\n"}
+                s{"t"}tate_t = 0{"\n"}
                 </pre>
                 </code>
             
@@ -154,14 +154,56 @@ export default function Projects() {
 
             <code>
                 <pre>
-                  if(close_obj == True): # if there is an object close better go straight.
-                  {"t"}mode = 0
+                  if(close_obj == True): # if there is an object close better go straight.{"\n"}
+                  {"t"}mode = 0{"\n"}
                   
-                  elif (close_obj == False): # if there is no object close do what ever.
-                  {"t"}mode = random.randint(0,1)
-                  
+                  elif (close_obj == False): # if there is no object close do what ever. {"\n"}
+                  {"t"}mode = random.randint(0,1){"\n"}
                 </pre>
               
+            </code>
+          </div>
+
+          <div>
+            In case of hitting the bumper, the robot will rotate randomly for 3 seconds {"\n"}
+            <code>
+              
+              if(crashed == 1 ):{"\n"}
+      
+              {"t"}side = random.randint(0, 1){"\n"}
+              {"t"}state_t = 1{"\n"}
+              
+              {"t"}if (side == 0):{"\n"}
+                {"t"}{"t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
+                {"t"}{"t"}clock = True{"\n"}
+               
+                {"t"}{"t"}while(clock == True):{"\n"}
+                  
+                  {"t"}{"t"}{"t"}HAL.setV(-increment){"\n"}
+                  {"t"}{"t"}{"t"}print("going back and right"){"\n"}
+                  {"t"}{"t"}{"t"}HAL.setW(ang){"\n"}
+                  
+                  {"t"}{"t"}{"t"}time_end = rospy.Time.now() # check time now{"\n"}
+                  {"t"}{"t"}{"t"}duration = time_end.secs - time_begin.secs # check duration time from begin.{"\n"}
+                  
+                  {"t"}{"t"}{"t"}if (duration == 3):{"\n"}
+                  {"t"}{"t"}{"t"}{"t"}clock = False{"\n"}
+                
+              {"t"}if (side == 1):{"\n"}
+                {"t"}{"t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
+                {"t"}{"t"{"t"}}clock = True{"\n"}
+               
+                {"t"}{"t"}while(clock == True):{"\n"}
+                
+                  {"t"}{"t"}{"t"}HAL.setV(-increment){"\n"}
+                  {"t"}{"t"}{"t"}print("going back and left"){"\n"}
+                  {"t"}{"t"}{"t"}HAL.setW(-ang){"\n"}
+          
+                  {"t"}{"t"}{"t"}time_end = rospy.Time.now() #check time now{"\n"}
+                  {"t"}{"t"}{"t"}duration = time_end.secs - time_begin.secs  # check duration time from begin.{"\n"}
+                  {"t"}{"t"}{"t"}if (duration == 3):{"\n"}
+                    {"t"}{"t"}{"t"}{"t"}clock = False{"\n"}
+                    
             </code>
           </div>
         
