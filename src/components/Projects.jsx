@@ -206,7 +206,7 @@ export default function Projects() {
             Here is an example video: {"\n"}
 
             <video controls width="500" controls="controls" mute="mute" preload="auto">
-              <source src="src/images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
+              <source src="../images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
             </video>
           
         
