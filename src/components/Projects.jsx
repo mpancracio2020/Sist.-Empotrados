@@ -205,10 +205,8 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-            <video controls width="500" controls="controls" mute="mute" preload="auto">
-              <source src="../images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
-            </video>
-          
+            <iframe src="https://youtu.be/xwCpgUhGOrc"
+              width="560" height="315" frameborder="0" allowfullscreen></iframe>
         
           {/*mainProjects.length !== 0 && (
             <>
