@@ -208,7 +208,7 @@ export default function Projects() {
 
              
           <iframe height="480" width="500"
-           src="https://youtu.be/xwCpgUhGOrc">
+           src="https://youtu.be/xwCpgUhGOrc?rel=0">
           </iframe>
                     
           {/*mainProjects.length !== 0 && (
