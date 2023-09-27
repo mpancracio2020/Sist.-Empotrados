@@ -205,7 +205,7 @@ export default function Projects() {
           <div>
             Here is an example video:
 
-            <video controls width="250">
+            <video controls width="500">
               <source src="src/images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
             </video>
           </div>
