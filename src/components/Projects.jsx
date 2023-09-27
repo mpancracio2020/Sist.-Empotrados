@@ -202,13 +202,13 @@ export default function Projects() {
             </code>
           </div>
 
-          <div>
-            Here is an example video:
+      
+            Here is an example video: {"\n"}
 
             <video controls width="500">
               <source src="src/images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
             </video>
-          </div>
+          
         
           {/*mainProjects.length !== 0 && (
             <>
