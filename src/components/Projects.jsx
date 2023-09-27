@@ -17,6 +17,11 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 
+var url = "https://youtu.be/xwCpgUhGOrc";
+var id = url.split("?v=")[1]; //sGbxmsDFVnE
+
+var embedlink = "http://www.youtube.com/embed/" + id; //www.youtube.com/embed/sGbxmsDFVnE
+document.getElementById("myIframe").src = embedLink;
 
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
@@ -205,10 +210,7 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-            <div>
-            <video data="https://youtu.be/xwCpgUhGOrc"
-             width="560" height="315"></video>
-           </div>
+            <iframe id="myIframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
           
           {/*mainProjects.length !== 0 && (
             <>
