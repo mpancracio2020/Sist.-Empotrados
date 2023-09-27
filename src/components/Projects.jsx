@@ -159,7 +159,7 @@ export default function Projects() {
           <div>
             In case of hitting the bumper, the robot will rotate randomly for 3 seconds {"\n"}
             <code>
-              
+              <pre>
               if(crashed == 1 ):{"\n"}
       
               {"\t"}side = random.randint(0, 1){"\n"}
@@ -195,7 +195,7 @@ export default function Projects() {
                   {"\t"}{"\t"}{"\t"}duration = time_end.secs - time_begin.secs  # check duration time from begin.{"\n"}
                   {"\t"}{"\t"}{"\t"}if (duration == 3):{"\n"}
                   {"\t"}{"\t"}{"\t"}{"\t"}clock = False{"\n"}
-                    
+               </pre>     
             </code>
           </div>
         
