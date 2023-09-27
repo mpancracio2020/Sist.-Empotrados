@@ -69,8 +69,8 @@ export default function Projects() {
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
             
-              <pre><code class="python">
-                def parse_laser_data(laser_data, close_obj): {"\n"}
+              <code class="python"><pre>
+                {"\n"}def parse_laser_data(laser_data, close_obj): {"\n"}
                   {"\t"}laser = [] {"\n"}
                   {"\t"}for i in range(45,135):{"\n"}
                         {"\t"}{"\t"}dist = laser_data.values[i]{"\n"}
@@ -81,14 +81,14 @@ export default function Projects() {
                           {"\t"}{"\t"}{"\t"}close_obj = True{"\n"}
                   {"\t"}return close_obj{"\n"}
                
-                </code> </pre>
+                </pre></code>
         </div>
 
         <div>Before moving, the robot will check if there is any object nearby with the laser. If there is, 
           the robot will go backwards for 3 seconds. This would be his first state.
 
           <code>
-                <pre>
+                <pre>{"\n"}
                 if (close_obj == True):{"\n"}
                 {"\t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
                 {"\t"}clock = True{"\n"}
@@ -113,7 +113,7 @@ export default function Projects() {
             the robot will be able to advance in a spiral or straight, depending on the mode it has activated.
 
             <code>
-                <pre>
+                <pre>{"\n"}
                 if(mode == 0 and crashed == 0 and close_obj == False):{"\n"}
       
                   {"\t"}if (straight_vel &lt; 2.5):{"\n"}
@@ -144,7 +144,7 @@ export default function Projects() {
             change to straight forward or not. If there is nothing nearby, the robot will randomly decide to move forward straight or in a spiral.
 
             <code>
-                <pre>
+                <pre>{"\n"}
                   if(close_obj == True): # if there is an object close better go straight.{"\n"}
                   {"\t"}mode = 0{"\n"}
                   
@@ -158,7 +158,7 @@ export default function Projects() {
           <div>
             In case of hitting the bumper, the robot will rotate randomly for 3 seconds {"\n"}
             <code>
-              <pre>
+              <pre>{"\n"}
               if(crashed == 1 ):{"\n"}
       
               {"\t"}side = random.randint(0, 1){"\n"}
