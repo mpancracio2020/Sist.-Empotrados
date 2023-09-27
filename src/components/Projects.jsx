@@ -191,7 +191,7 @@ export default function Projects() {
                 
               {"t"}if (side == 1):{"\n"}
                 {"t"}{"t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
-                {"t"}{"t"{"t"}}clock = True{"\n"}
+                {"t"}{"t"}{"t"}clock = True{"\n"}
                
                 {"t"}{"t"}while(clock == True):{"\n"}
                 
