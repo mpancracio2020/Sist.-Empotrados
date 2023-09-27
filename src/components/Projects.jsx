@@ -206,8 +206,8 @@ export default function Projects() {
             Here is an example video: {"\n"}
 
             <body>
-            <object data="https://youtu.be/xwCpgUhGOrc"
-             width="560" height="315"></object>
+            <video data="https://youtu.be/xwCpgUhGOrc"
+             width="560" height="315"></video>
            </body>
           {/*mainProjects.length !== 0 && (
             <>
