@@ -69,8 +69,7 @@ export default function Projects() {
           I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
           but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
             
-              <code class="python">
-                <pre>
+              <pre><code class="python">
                 def parse_laser_data(laser_data, close_obj): {"\n"}
                   {"\t"}laser = [] {"\n"}
                   {"\t"}for i in range(45,135):{"\n"}
@@ -81,8 +80,8 @@ export default function Projects() {
                         {"\t"}{"\t"}if (dist 	&#60; 0,3):{"\n"}
                           {"\t"}{"\t"}{"\t"}close_obj = True{"\n"}
                   {"\t"}return close_obj{"\n"}
-                </pre>
-                </code>
+               
+                </code> </pre>
         </div>
 
         <div>Before moving, the robot will check if there is any object nearby with the laser. If there is, 
