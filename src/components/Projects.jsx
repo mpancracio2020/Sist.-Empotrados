@@ -83,14 +83,87 @@ export default function Projects() {
                   {"\t"}return close_obj{"\n"}
                 </pre>
                 </code>
-          <img 
+          /*<img 
             alt="Laser function" 
             src={laserD} 
             height={300}
             width={500}
             style={{ alignSelf: 'center' }} 
-        /> 
+        /> */
         </div>
+
+        <div>Before moving, the robot will check if there is any object nearby with the laser. If there is, 
+          the robot will go backwards for 3 seconds. This would be his first state.
+
+          <code>
+                <pre>
+                if (close_obj == True):
+                 {"\t"}time_begin = rospy.Time.now() # start to count seconds.
+                 {"\t"}clock = True
+                {"\t"} print("going back")
+            
+                 {"\t"}while(clock == True):
+            
+                   {"\t"} {"\t"}HAL.setV(back_vel)
+                  
+                   {"\t"} {"\t"}HAL.setW(1)
+                   {"\t"} {"\t"}time_end = rospy.Time.now() # check time now.
+                   {"\t"} {"\t"}duration = time_end.secs - time_begin.secs # check duration time from begin.
+                  
+                   {"\t"} {"\t"}if (duration == 3):
+                     {"\t"} {"\t"}clock = False
+                </pre>
+                </code>
+        
+        </div>
+
+          <div>
+            Afterwards, it will go to the second state, where if it has not detected anything nearby, nor has it collided with the bumper, 
+            the robot will be able to advance in a spiral or straight, depending on the mode it has activated.
+
+            <code>
+                <pre>
+                if(mode == 0 and crashed == 0 and close_obj == False):
+      
+                  {"t"}if (straight_vel < 2.5):
+                  
+                  {"t"}{"t"}straight_vel += increment
+                
+                {"t"}HAL.setV(straight_vel)
+                {"t"}HAL.setW(0)
+                {"t"}print("cleaning straight")
+                {"t"}state_t = 0
+              
+              if (mode == 1 and crashed == 0 and close_obj == False):
+                {"t"}if (straight_vel < 2.5):
+                  
+                  {"t"}{"t"}straight_vel += increment
+                {"t"}angular_vel += increment
+                {"t"}HAL.setV(angular_vel)
+                {"t"}HAL.setW(ang)
+                {"t"}print("cleaning spiral")
+                s{"t"}tate_t = 0
+                </pre>
+                </code>
+            
+          </div>
+
+          <div>
+            This default mode is spiral, but depending on whether or not the robot has an object nearby after having to go backwards, it will
+            change to straight forward or not. If there is nothing nearby, the robot will randomly decide to move forward straight or in a spiral.
+
+            <code>
+                <pre>
+                  if(close_obj == True): # if there is an object close better go straight.
+                  {"t"}mode = 0
+                  
+                  elif (close_obj == False): # if there is no object close do what ever.
+                  {"t"}mode = random.randint(0,1)
+                  
+                </pre>
+              
+            </code>
+          </div>
         
           {/*mainProjects.length !== 0 && (
             <>
