@@ -206,7 +206,7 @@ export default function Projects() {
             Here is an example video:
 
             <video controls width="250">
-              <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+              <source src="src/images/grabacion-de-pantalla-desde-25-09-23-175730_KGOh9Ctm.webm" type="video/webm" />
             </video>
           </div>
         
