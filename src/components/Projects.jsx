@@ -135,7 +135,7 @@ export default function Projects() {
                 {"t"}state_t = 0
               
               if (mode == 1 and crashed == 0 and close_obj == False):
-                {"t"}if (straight_vel < 2.5):
+                {"t"}if (straight_vel &lt 2.5):
                   
                   {"t"}{"t"}straight_vel += increment
                 {"t"}angular_vel += increment
