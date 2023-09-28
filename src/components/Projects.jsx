@@ -208,7 +208,7 @@ export default function Projects() {
 
             <div>
             <video controls="true">
-                    <source src="https://youtu.be/xwCpgUhGOrc" type="video/mp4" />
+                    <source src="https://youtu.be/embed/xwCpgUhGOrc" type="video/mp4" />
                 </video>
            </div>
                     
