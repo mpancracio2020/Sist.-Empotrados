@@ -206,11 +206,10 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-             
-          <div style = "text-align: center;"> <iframe allow="accelerometer; autoplay;clipboard-write;
-                                                encryted-media; gyroscope;
-                                                picture-in-picture" allowfullscreen="" frameborder="0" height="480" width="500"
-           src="https://youtu.be/embed/xwCpgUhGOrc" title="Example"> </iframe></div>
+            <div>
+            <video data="https://youtu.be/xwCpgUhGOrc"
+             width="560" height="315"></video>
+           </div>
                     
           {/*mainProjects.length !== 0 && (
             <>
