@@ -206,9 +206,8 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-            <video controls="true">
-                    <source src="https://youtu.be/embed/xwCpgUhGOrc" type="video/mp4" />
-                </video>
+           <iframe width="560" height="315" src="https://youtu.be/xwCpgUhGOrc" frameborder="0" allowfullscreen></iframe>
+
         
                     
           {/*mainProjects.length !== 0 && (
