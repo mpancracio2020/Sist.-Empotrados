@@ -205,10 +205,9 @@ export default function Projects() {
 
       
             Here is an example video: {"\n"}
-
-           <iframe width="560" height="315" src="https://youtu.be/xwCpgUhGOrc" frameborder="0" allowfullscreen></iframe>
-
-        
+            <div class="embed-responsive embed-responsive-16by9">
+               <iframe width="560" height="315" src="https://youtu.be/xwCpgUhGOrc" frameborder="0" allowfullscreen></iframe>
+            </div>
                     
           {/*mainProjects.length !== 0 && (
             <>
