@@ -206,11 +206,10 @@ export default function Projects() {
       
             Here is an example video: {"\n"}
 
-            <div>
             <video controls="true">
                     <source src="https://youtu.be/embed/xwCpgUhGOrc" type="video/mp4" />
                 </video>
-           </div>
+        
                     
           {/*mainProjects.length !== 0 && (
             <>
