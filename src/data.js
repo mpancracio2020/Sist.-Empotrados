@@ -32,7 +32,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "This is my personal blog about the practices of the Mobile Robotics subject. I will upload my progress in each practice, my solutions and my own experience.";
+  "This is my personal blog about the practices of the Services Robotics subject. I will upload my progress in each practice, my solutions and my own experience.";
 
 /* Skills
  ************************************************************** 
