@@ -80,32 +80,24 @@ export default function Projects() {
          
           {
           }
+
+          {/* P2 - RESCUE PEOPLE -*/}
            <div>
-            <h1>Basic Vacuum Cleaner <Icon icon="solar:smart-vacuum-cleaner-outline" className="display-4" /></h1>
+            <h1>Rescue People <Icon icon="sgis:drone" className="display-4" /></h1>
             <div className="accordion">
               {accordionData.map(({ title, content }) => (
                 <Accordion title={'More content..'} 
                   content={
-                  <p>This practice consists of developing an iterative pseudo-navigation algorithm.
-                        I have used the bumper and laser sensor to avoid collisions. The laser will predominate in the measurements, 
-                        but it may be the case that in some turns it does not sense a corner and that is where the bumper comes into play.
-                  
-                        <code class="python"><pre>
-                          {"\n"}def parse_laser_data(laser_data, close_obj): {"\n"}
-                            {"\t"}laser = [] {"\n"}
-                            {"\t"}for i in range(45,135):{"\n"}
-                                  {"\t"}{"\t"}dist = laser_data.values[i]{"\n"}
-                                  {"\t"}{"\t"}angle = math.radians(i){"\n"}
-                                  {"\t"}{"\t"}laser += [(dist, angle)]{"\n"}
-                                  {"\t"}{"\t"}print("distancia: ", dist){"\n"}
-                                  {"\t"}{"\t"}if (dist 	&#60; 0,3):{"\n"}
-                                    {"\t"}{"\t"}{"\t"}close_obj = True{"\n"}
-                            {"\t"}return close_obj{"\n"}
-                     
-                      </pre></code>
+                  <p>This practice encompasses the task of rescuing survivors. For this we need a drone. We will use your GPS and camera to perform the task. {"\n"}
+                    First of all, you have to know an estimate of the position of the survivors. Which is (x,y) in my case.
 
-                    Before moving, the robot will check if there is any object nearby with the laser. If there is, 
-                    the robot will go backwards for 3 seconds. This would be his first state.
+                    Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
+                    [(developing...)] {"\n"}
+                    
+                    Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.Haar needs to have a "straight" face{"\n"}
+                    to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
+
+                    
 
                     <code>
                         <pre>{"\n"}
@@ -218,6 +210,8 @@ export default function Projects() {
               ))}
             </div>
           </div>
+          {/* P2 -END*/}
+          
         </Container>
       </section>
     </Element>
