@@ -83,7 +83,7 @@ export default function Projects() {
 
           {/* P2 - RESCUE PEOPLE -*/}
            <div>
-            <h1>Rescue People <Icon icon="sgis:drone" className="display-4" /></h1>
+            <h1>Rescue People <Icon icon="gis:drone" className="display-4" /></h1>
             <div className="accordion">
               {accordionData.map(({ title, content }) => (
                 <Accordion title={'More content..'} 
@@ -96,9 +96,9 @@ export default function Projects() {
                     
                     Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.Haar needs to have a "straight" face{"\n"}
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
-
+                    <div>
                     <img src="src/images/obama.png" alt="example" />
-
+                    </div>
                     <code>
                         <pre>{"\n"}
                         if (close_obj == True):{"\n"}
