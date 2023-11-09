@@ -104,8 +104,8 @@ export default function Projects() {
   
                   
                     
-                   
-          </div>
+                   </div>
+           </div>
           {/* P2 -END*/}
           
         </Container>
