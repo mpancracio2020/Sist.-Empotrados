@@ -94,126 +94,17 @@ export default function Projects() {
                     Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
                     [(developing...)] {"\n"}
                     
-                    Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.Haar needs to have a "straight" face{"\n"}
+                    Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.{"\n"}
+                    Haar needs to have a "straight" face{"\n"}
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
-                    <center>
-                    
+              
                     <img align="right"  src={obama}
                        style={{ width: '200px', height: 'auto' }}
                       />
   
-                    </center>
-                    
-                    <code>
-                        <pre>{"\n"}
-                        if (close_obj == True):{"\n"}
-                        {"\t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
-                        {"\t"}clock = True{"\n"}
-                        {"\t"}print("going back"){"\n"}
-                    
-                        {"\t"}while(clock == True):{"\n"}
-                    
-                          {"\t"}{"\t"}HAL.setV(back_vel){"\n"}
-                          {"\t"}{"\t"}HAL.setW(1){"\n"}
-                          {"\t"}{"\t"}time_end = rospy.Time.now() # check time now.{"\n"}
-                          {"\t"}{"\t"}duration = time_end.secs - time_begin.secs # check duration time from begin.{"\n"}
-                          
-                          {"\t"} {"\t"}if (duration == 3):{"\n"}
-                          {"\t"}{"\t"}{"\t"}clock = False{"\n"}
-                        </pre>
-                        </code>
-                    Afterwards, it will go to the second state, where if it has not detected anything nearby, nor has it collided with the bumper, 
-                    the robot will be able to advance in a spiral or straight, depending on the mode it has activated.
-
-                         <code>
-                          <pre>{"\n"}
-                          if(mode == 0 and crashed == 0 and close_obj == False):{"\n"}
-                
-                            {"\t"}if (straight_vel &lt; 2.5):{"\n"}
-                            
-                            {"\t"}{"\t"}straight_vel += increment{"\n"}
-                          
-                          {"\t"}HAL.setV(straight_vel){"\n"}
-                          {"\t"}HAL.setW(0){"\n"}
-                          {"\t"}print("cleaning straight"){"\n"}
-                          {"\t"}state_t = 0{"\n"}
-                        
-                        if (mode == 1 and crashed == 0 and close_obj == False):{"\n"}
-                          {"\t"}if (straight_vel &lt; 2.5):{"\n"}
-                            
-                            {"\t"}{"\t"}straight_vel += increment{"\n"}
-                          {"\t"}angular_vel += increment{"\n"}
-                          {"\t"}HAL.setV(angular_vel){"\n"}
-                          {"\t"}HAL.setW(ang){"\n"}
-                          {"\t"}print("cleaning spiral"){"\n"}
-                          {"\t"}state_t = 0{"\n"}
-                          </pre>
-                        </code>
-
-                    This default mode is spiral, but depending on whether or not the robot has an object nearby after having to go backwards, it will
-                    change to straight forward or not. If there is nothing nearby, the robot will randomly decide to move forward straight or in a spiral.
-
-                        <code>
-                            <pre>{"\n"}
-                              if(close_obj == True): # if there is an object close better go straight.{"\n"}
-                              {"\t"}mode = 0{"\n"}
-                              
-                              elif (close_obj == False): # if there is no object close do what ever. {"\n"}
-                              {"\t"}mode = random.randint(0,1){"\n"}
-                            </pre>
-                          
-                        </code>
-
-                     In case of hitting the bumper, the robot will rotate randomly for 3 seconds {"\n"}
-                        <code>
-                          <pre>{"\n"}
-                          if(crashed == 1 ):{"\n"}
                   
-                          {"\t"}side = random.randint(0, 1){"\n"}
-                          {"\t"}state_t = 1{"\n"}
-                          
-                          {"\t"}if (side == 0):{"\n"}
-                          {"\t"}{"\t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
-                          {"\t"}{"\t"}clock = True{"\n"}
-                           
-                            {"\t"}{"\t"}while(clock == True):{"\n"}
-                              
-                              {"\t"}{"\t"}{"\t"}HAL.setV(-increment){"\n"}
-                              {"\t"}{"\t"}{"\t"}print("going back and right"){"\n"}
-                              {"\t"}{"\t"}{"\t"}HAL.setW(ang){"\n"}
-                              
-                              {"\t"}{"\t"}{"\t"}time_end = rospy.Time.now() # check time now{"\n"}
-                              {"\t"}{"\t"}{"\t"}duration = time_end.secs - time_begin.secs # check duration time from begin.{"\n"}
-                              
-                              {"\t"}{"\t"}{"\t"}if (duration == 3):{"\n"}
-                              {"\t"}{"\t"}{"\t"}{"t"}clock = False{"\n"}
-                            
-                            {"\t"}if (side == 1):{"\n"}
-                            {"\t"}{"\t"}time_begin = rospy.Time.now() # start to count seconds.{"\n"}
-                            {"\t"}{"\t"}{"\t"}clock = True{"\n"}
-                           
-                            {"\t"}{"\t"}while(clock == True):{"\n"}
-                            
-                              {"\t"}{"\t"}{"\t"}HAL.setV(-increment){"\n"}
-                              {"\t"}{"\t"}{"\t"}print("going back and left"){"\n"}
-                              {"\t"}{"\t"}{"\t"}HAL.setW(-ang){"\n"}
-                      
-                              {"\t"}{"\t"}{"\t"}time_end = rospy.Time.now() #check time now{"\n"}
-                              {"\t"}{"\t"}{"\t"}duration = time_end.secs - time_begin.secs  # check duration time from begin.{"\n"}
-                              {"\t"}{"\t"}{"\t"}if (duration == 3):{"\n"}
-                              {"\t"}{"\t"}{"\t"}{"\t"}clock = False{"\n"}
-                           </pre>     
-                        </code>
-                     Here is an example video: {"\n"} {"\n"}
-                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/xwCpgUhGOrc?si=8J8rmt9WVKy6X2y-" 
-             title="YouTube video player" frameborder="0" allow="fullscreen;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-             allowfullscreen></iframe>  </center>
-                  
-                  </p>
-
-                                  } />
-              ))}
-            </div>
+                    
+                   
           </div>
           {/* P2 -END*/}
           
