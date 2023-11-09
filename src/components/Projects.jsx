@@ -102,10 +102,12 @@ export default function Projects() {
                        style={{ width: '200px', height: 'auto' }}
                       />
   
-                  
-                    
-                   </div>
-           </div>
+                  </p>
+
+                                  } />
+              ))}
+            </div>
+          </div>
           {/* P2 -END*/}
           
         </Container>
