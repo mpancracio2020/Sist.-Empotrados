@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from './Accordion';
 import { useAppContext } from "./appContext";
 import { useDispatch, useSelector } from "react-redux";
 import {
