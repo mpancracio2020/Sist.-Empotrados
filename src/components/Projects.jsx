@@ -19,7 +19,7 @@ import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 
 
-
+var obama = require('../images/obama.png')
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -98,8 +98,7 @@ export default function Projects() {
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
                     <center>
                     
-                    <img src={require('../images/obama.png').default} alt="Descripción de la imagen"
-                      style={{ width: '200px', height: 'auto' }}/>
+                    <img src={requireobama}/>
   
                     </center>
                     
