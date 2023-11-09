@@ -98,7 +98,9 @@ export default function Projects() {
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
                     <center>
                     
-                    <img src={obama}/>
+                    <img src={obama}
+                       style={{ width: '200px', height: 'auto' }}
+                      />
   
                     </center>
                     
