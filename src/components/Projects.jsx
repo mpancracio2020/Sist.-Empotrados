@@ -112,8 +112,7 @@ export default function Projects() {
                     <br>
                     </br>
                     {"\n"}
-                    {"\n"}
-                    {"\n"}
+                
                     Here is an example video: {"\n"} {"\n"}
                     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/GbOMlcvZUxs?si=nZPCvAFe2eF66ALc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
                     
