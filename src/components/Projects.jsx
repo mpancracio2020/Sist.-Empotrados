@@ -97,17 +97,20 @@ export default function Projects() {
                     Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
                     I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
                     
-                    
+                    <br>
+                    </br>
                     {"\n"}
                     Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.{"\n"}
                     Haar needs to have a "straight" face{"\n"}
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
 
-                   
+                    <br>
+                    </br>
                     At this point, you just need not to repeat faces, comparing the position in which you detect a face, once you store 6 different faces, 
                     {"\n"}
                     return to the base and land using HAL.landed()
-
+                    <br>
+                    </br>
                     {"\n"}
                     {"\n"}
                     {"\n"}
