@@ -20,6 +20,7 @@ import StyledCard from "./StyledCard";
 
 
 var obama = require('../images/obama.png')
+var espiral = require('../images/espiral.jpg')
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -105,7 +106,9 @@ export default function Projects() {
 
                     
                     For the navigation section, I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
-                    
+                    <img align="right"  src={espiral}
+                       style={{ width: '200px', height: 'auto' }}
+                      />
                   </p>
 
                                   } />
