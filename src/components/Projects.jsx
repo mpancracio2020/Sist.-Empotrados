@@ -94,18 +94,16 @@ export default function Projects() {
 
                     Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
                     [(developing...)] {"\n"}
-                    
-                   
-                    <div style="display: table; height: 400px; overflow: hidden;">
-                      <div style="display: table-cell; vertical-align: middle;">
-                        <div>
+                    <div
+                      vertical-align: middle;
+                    >
                            Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.{"\n"}
                     Haar needs to have a "straight" face{"\n"}
                     to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
 
                         </div>
-                      </div>
-                    </div>
+                   
+                   
                     <img align="right"  src={obama}
                        style={{ width: '200px', height: 'auto' }}
                       />
