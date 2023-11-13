@@ -101,7 +101,11 @@ export default function Projects() {
                     <img align="right"  src={obama}
                        style={{ width: '200px', height: 'auto' }}
                       />
-  
+                    {"\n"}{"\n"}
+
+                    
+                    For the navigation section, I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
+                    
                   </p>
 
                                   } />
