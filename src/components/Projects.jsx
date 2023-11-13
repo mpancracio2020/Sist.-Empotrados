@@ -105,6 +105,14 @@ export default function Projects() {
                     At this point, you just need not to repeat faces, comparing the position in which you detect a face, once you store 6 different faces, 
                     {"\n"}
                     return to the base and land using HAL.landed()
+
+                    {"\n"}
+                    {"\n"}
+                    {"\n"}
+                    Here is an example video: {"\n"} {"\n"}
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/xwCpgUhGOrc?si=8J8rmt9WVKy6X2y-" 
+             title="YouTube video player" frameborder="0" allow="fullscreen;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             allowfullscreen></iframe>  </center>
                     
                   </p>
 
