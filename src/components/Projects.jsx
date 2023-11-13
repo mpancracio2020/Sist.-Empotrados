@@ -90,7 +90,9 @@ export default function Projects() {
                 <Accordion title={'More content..'} 
                   content={
                   <p>This practice encompasses the task of rescuing survivors. For this we need a drone. We will use your GPS and camera to perform the task. {"\n"}
-                    First of all, you have to know an estimate of the position of the survivors. Which is (x,y) in my case.
+                    First of all, you have to know an estimate of the position of the survivors. Which is (x,y) in my case. 
+                    <br>
+                    </br>
 
                     Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
                     I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
