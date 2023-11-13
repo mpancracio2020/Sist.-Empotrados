@@ -107,8 +107,9 @@ export default function Projects() {
                     
                     For the navigation section, I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
                     <div>
-                    <img align="right"  src={espiral}
-                       style={{ width: '200px', height: 'auto' }}
+                    <img src={espiral}
+                      
+                       style={{ alignSelf: 'center' }}
                       />
                     </div>
                     
