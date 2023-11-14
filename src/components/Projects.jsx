@@ -82,16 +82,26 @@ export default function Projects() {
           {
           }
 
-          {/* P2 - RESCUE PEOPLE -*/}
-           <div>
+          {/* P2 - VENDING MACHINE -*/}
+          
+           
+
+          <div>
             <h1>Vending Machine <Icon icon="game-icons:vending-machine" className="display-4" /></h1>
             <div className="accordion">
               {accordionData.map(({ title, content }) => (
                 <Accordion title={'More content..'} 
-                  content={ /* DEVELOPOING*/} />
+                  content={
+                  <p>
+                
+                  
+                  </p>
+
+                                  } />
               ))}
             </div>
           </div>
+           
           {/* P2 -END*/}
           
         </Container>
