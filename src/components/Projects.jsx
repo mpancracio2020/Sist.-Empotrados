@@ -84,41 +84,11 @@ export default function Projects() {
 
           {/* P2 - RESCUE PEOPLE -*/}
            <div>
-            <h1>Rescue People <Icon icon="gis:drone" className="display-4" /></h1>
+            <h1>Vending Machine <Icon icon="game-icons:vending-machine" className="display-4" /></h1>
             <div className="accordion">
               {accordionData.map(({ title, content }) => (
                 <Accordion title={'More content..'} 
-                  content={
-                  <p>This practice encompasses the task of rescuing survivors. For this we need a drone. We will use your GPS and camera to perform the task. {"\n"}
-                    First of all, you have to know an estimate of the position of the survivors. Which is (x,y) in my case. 
-                    <br>
-                    </br>
-
-                    Once here, we need to sweep the area. There are many methods, we can do spirals, up-down sweeps, etc...
-                    I have implemented a spiral, controlled by speed on the incremental x axis and a constant yaw value{"\n"}
-                    
-                    <br>
-                    </br>
-                    {"\n"}
-                    Now it's time to recognize faces, for this we use the Haar tool, which has a fairly low computational cost compared to other tools.{"\n"}
-                    Haar needs to have a "straight" face{"\n"}
-                    to be able to recognize it,therefore, we implemented an algorithm that allows us to detect faces with any rotation
-
-                    <br>
-                    </br>
-                    At this point, you just need not to repeat faces, comparing the position in which you detect a face, once you store 6 different faces, 
-                    {"\n"}
-                    return to the base and land using HAL.landed()
-                    <br>
-                    </br>
-                    {"\n"}
-                
-                    Here is an example video: {"\n"} {"\n"}
-                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/GbOMlcvZUxs?si=nZPCvAFe2eF66ALc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-                    
-                  </p>
-
-                                  } />
+                  content={ /* DEVELOPOING*/} />
               ))}
             </div>
           </div>
