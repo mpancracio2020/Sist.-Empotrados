@@ -107,11 +107,11 @@ export default function Projects() {
                     </center>
                     <p></p>
                   
-                     <Box width={300} m={5}>
+                  
                       <Divider>Hello World (spacing = 3)</Divider>
-                      <Box py={4} />
+                 
                       <Divider spacing={1}>Hello World (spacing = 1)</Divider>
-                    </Box>
+                    
 
                     We
                   
