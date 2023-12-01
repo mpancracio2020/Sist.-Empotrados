@@ -19,7 +19,8 @@ import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 //import { Divider } from 'rsuite'; 
 //import 'rsuite/dist/styles/rsuite-default.css';
-import { Grid, Divider as MuiDivider } from "@material-ui/core";
+//import { Grid, Divider as MuiDivider } from "@material-ui/core";
+import Divider from "./Divider";
 
 const Divider = ({ children, textAlign, ...props }) => (
   <Grid container alignItems="center" spacing={3} {...props}>
@@ -118,8 +119,11 @@ export default function Projects() {
                     </center>
                     <p></p>
                   
-                    <Divider textAlign="left">LEFT</Divider>
-                    
+                     <Box width={300} m={5}>
+                      <Divider>Hello World (spacing = 3)</Divider>
+                      <Box py={4} />
+                      <Divider spacing={1}>Hello World (spacing = 1)</Divider>
+                    </Box>
 
                     We
                   
