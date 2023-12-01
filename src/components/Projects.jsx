@@ -20,7 +20,7 @@ import StyledCard from "./StyledCard";
 //import { Divider } from 'rsuite'; 
 //import 'rsuite/dist/styles/rsuite-default.css';
 //import { Grid, Divider as MuiDivider } from "@material-ui/core";
-import Divider from "./Divider";
+//import Divider from "./Divider";
 
 //export default Divider;
 
@@ -106,16 +106,16 @@ export default function Projects() {
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
                     <p></p>
-                  
-                  
-                      <Divider>Hello World (spacing = 3)</Divider>
-                 
-                      <Divider spacing={1}>Hello World (spacing = 1)</Divider>
-                    
+                
 
                     We
                   
                   </p>
+
+                    <Subtitle>
+                      <h2>Projects</h2>
+                      <div className="underline"></div>
+                    </Subtitle>
 
                                   } />
               ))}
