@@ -111,16 +111,14 @@ export default function Projects() {
                     We
                   
                   </p>
-
-                    <Tittle>
-                      <h3>Projects</h3>
-                      <div className="underline"></div>
-                    </Tittle>
-
                                   } />
               ))}
             </div>
           </div>
+           <Title>
+              <h2>Projects</h2>
+              <div className="underline"></div>
+            </Title>
            
           {/* P2 -END*/}
           
