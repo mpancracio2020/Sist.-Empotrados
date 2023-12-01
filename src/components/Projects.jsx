@@ -17,6 +17,8 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import { Divider } from 'rsuite'; 
+import '../node_modules/rsuite/dist/rsuite.min.css';
 
 
 var obama = require('../images/obama.png')
@@ -101,6 +103,16 @@ export default function Projects() {
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
                     <p></p>
+                    <Divider> 
+                    Geeks for Geeks Preparation - Interactive Live Courses 
+                    </Divider> 
+
+                    <p> 
+                    <b style={{ color: "green" }}>Amazon SDE Preparation Test  
+                    Series</b><br />
+                    </p> 
+
+                    We
                   
                   </p>
 
