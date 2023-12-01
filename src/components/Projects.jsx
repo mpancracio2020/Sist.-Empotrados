@@ -33,7 +33,7 @@ const Divider = ({ children, textAlign, ...props }) => (
   </Grid>
 );
 
-export default Divider;
+//export default Divider;
 
 var obama = require('../images/obama.png')
 var diagrama = require('../images/diagrama_vm.png')
