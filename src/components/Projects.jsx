@@ -26,6 +26,7 @@ import StyledCard from "./StyledCard";
 
 var obama = require('../images/obama.png')
 var diagrama = require('../images/diagrama_vm.png')
+var esquematico = require('../images/esquematico_bb.png')
 var espiral = require('../images/espiral.jpg')
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
@@ -111,8 +112,12 @@ export default function Projects() {
                      State diagram
                     </center>
 
-                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor
-                   
+                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor {"\n"}
+                    {"\n"}
+                    {"\n"}
+                     <center>
+                      <img src={esquematico_bb} width={350} height={350} alt='Large Pizza' />
+                    </center>
                   
                   </p>
                 
