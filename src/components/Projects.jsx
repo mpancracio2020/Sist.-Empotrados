@@ -19,7 +19,21 @@ import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 import { Divider } from 'rsuite'; 
 //import 'rsuite/dist/styles/rsuite-default.css';
+import { Grid, Divider as MuiDivider } from "@material-ui/core";
 
+const Divider = ({ children, textAlign, ...props }) => (
+  <Grid container alignItems="center" spacing={3} {...props}>
+    <Grid item xs={textAlign === 'left' ? 2 : true}>
+      <MuiDivider />
+    </Grid>
+    <Grid item>{children}</Grid>
+    <Grid item xs={textAlign === 'right' ? 2 : true}>
+      <MuiDivider />
+    </Grid>
+  </Grid>
+);
+
+export default Divider;
 
 var obama = require('../images/obama.png')
 var diagrama = require('../images/diagrama_vm.png')
@@ -104,11 +118,7 @@ export default function Projects() {
                     </center>
                     <p></p>
                   
-                    <div>
-                    <p> 
-                     <Divider spacing={1}> Geeks for Geeks Preparation - Interactive Live Courses </Divider> 
-                    </p> 
-                    </div>
+                    <Divider textAlign="left">LEFT</Divider>
                     
 
                     We
