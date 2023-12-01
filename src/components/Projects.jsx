@@ -95,9 +95,12 @@ export default function Projects() {
                   content={
                   <p>
                     In this practice I implement a solution to a vending machine. Using a state machine we get the following result {"\n"}
+
+                    <p></p>
                     <center>
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
+                    <p></p>
                   
                   </p>
 
