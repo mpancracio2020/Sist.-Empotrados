@@ -20,6 +20,7 @@ import StyledCard from "./StyledCard";
 
 
 var obama = require('../images/obama.png')
+var diagrama = require('../images/diagrama_vm.png')
 var espiral = require('../images/espiral.jpg')
 var laserD = require('../images/laser_def.png')
 export default function Projects() {
@@ -94,6 +95,9 @@ export default function Projects() {
                   content={
                   <p>
                     In this practice I implement a solution to a vending machine. Using a state machine we get the following result {"\n"}
+                    <center>
+                      <img src={diagrama} width={350} height={350} alt='Large Pizza' />
+                    </center>
                   
                   </p>
 
