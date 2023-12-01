@@ -116,7 +116,7 @@ export default function Projects() {
                     {"\n"}
                     {"\n"}
                      <center>
-                      <img src={esquematico} width={350} height={350} alt='Large Pizza' />
+                      <img src={esquematico} width={550} height={350} alt='Large Pizza' />
                     </center>
                   
                   </p>
