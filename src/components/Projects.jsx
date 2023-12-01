@@ -101,22 +101,21 @@ export default function Projects() {
                   <p>
                     In this practice I implement a solution to a vending machine. Using a state machine we get the following result {"\n"}
 
-                    <p></p>
+            
                     <center>
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
-                    <p></p>
-                
 
-                    <p></p>
+          
                     <center>
                      State diagram
                     </center>
-                    <p></p>
-                  
-                  <p>
+
                     For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor
+                   
+                  
                   </p>
+                
                     } />
                  
               ))}
