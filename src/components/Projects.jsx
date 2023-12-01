@@ -113,7 +113,7 @@ export default function Projects() {
                      State diagram
                     </center>
                     <p></p>
-                  </p>
+                  
                   <p>
                     For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor
                   </p>
