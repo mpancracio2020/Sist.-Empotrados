@@ -18,7 +18,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 import { Divider } from 'rsuite'; 
-import 'rsuite/dist/styles/rsuite-default.css';
+//import 'rsuite/dist/styles/rsuite-default.css';
 
 
 var obama = require('../images/obama.png')
@@ -103,9 +103,7 @@ export default function Projects() {
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
                     <p></p>
-                    <Divider> 
-                    Geeks for Geeks Preparation - Interactive Live Courses 
-                    </Divider> 
+                    <Divider spacing={1}> Geeks for Geeks Preparation - Interactive Live Courses </Divider> 
 
                     <p> 
                    
