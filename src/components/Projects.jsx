@@ -103,10 +103,10 @@ export default function Projects() {
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
                     <p></p>
-                    <Divider spacing={1}> Geeks for Geeks Preparation - Interactive Live Courses </Divider> 
+                  
 
                     <p> 
-                   
+                     <Divider spacing={1}> Geeks for Geeks Preparation - Interactive Live Courses </Divider> 
                     </p> 
 
                     We
