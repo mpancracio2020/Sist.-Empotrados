@@ -112,12 +112,12 @@ export default function Projects() {
                   
                   </p>
                                   } />
+                    <Title>
+                      <h2>Projects</h2>
+                    </Title>
               ))}
 
-                  <Title>
-                    <h2>Projects</h2>
-                    <div className="underline"></div>
-                  </Title>
+                  
             </div>
         
           </div>
