@@ -17,7 +17,7 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
-import { Divider } from 'rsuite'; 
+//import { Divider } from 'rsuite'; 
 //import 'rsuite/dist/styles/rsuite-default.css';
 import { Grid, Divider as MuiDivider } from "@material-ui/core";
 
