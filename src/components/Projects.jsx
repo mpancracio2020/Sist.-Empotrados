@@ -104,10 +104,12 @@ export default function Projects() {
                     </center>
                     <p></p>
                   
-
+                    <div>
                     <p> 
                      <Divider spacing={1}> Geeks for Geeks Preparation - Interactive Live Courses </Divider> 
                     </p> 
+                    </div>
+                    
 
                     We
                   
