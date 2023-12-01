@@ -115,7 +115,12 @@ export default function Projects() {
                     <p></p>
                   
                   </p>
-                                  } />
+                                  
+                  
+                  <Title>
+              <h2>Projects</h2>
+              
+            </Title>} />
                    
               ))}
 
@@ -123,10 +128,7 @@ export default function Projects() {
             </div>
         
           </div>
-           <Title>
-              <h2>Projects</h2>
-              
-            </Title>
+           
            
            
           {/* P2 -END*/}
