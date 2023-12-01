@@ -93,7 +93,7 @@ export default function Projects() {
                 <Accordion title={'More content..'} 
                   content={
                   <p>
-                
+                    In this practice I implement a solution to a vending machine. Using a state machine we get the following result {"\n"}
                   
                   </p>
 
