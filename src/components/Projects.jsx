@@ -18,7 +18,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 import { Divider } from 'rsuite'; 
-import '../node_modules/rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/styles/rsuite-default.css';
 
 
 var obama = require('../images/obama.png')
