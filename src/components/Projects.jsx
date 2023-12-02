@@ -111,21 +111,8 @@ export default function Projects() {
                     <center>
                      State diagram {"\n"}
                     </center>
-
-                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor {"\n"}
-                    {"\n"}
-                    {"\n"}
-                     <center>
-                      <img src={esquematico} width={550} height={350} alt='Large Pizza' />
-                    </center>
-
-
-
-                      Here is an example video: {"\n"} {"\n"}
-                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/eYn4rW6QfYA?si=kzYI9oo-ECcg0u2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-                  
-                  
-                  The functionality can be summarized as follows: {"\n"}
+                  <pre>
+                     The functionality can be summarized as follows: {"\n"}
                   {"\n"}
                   {"\t"}-The start state will be the initial one and will show "charging" on the display while LED1 (blue) flashes. 
                   {"\t"}-The services state will be waiting for a client close to the machine while showing "waiting for client", once a client is detected it will show the temperature and humidity for 5 seconds, {"\n"}
@@ -141,6 +128,22 @@ export default function Projects() {
                         {"\t"}{"\t"}-Fourth, to exit the modification mode you must either move the joystick to the left (exit without saving), or press the joystick, {"\n"}
                         {"\t"}{"\t"}thus causing the changes to be saved and later you can either continue viewing the coffees to be modified or exit to the administrator menu moving the joystick to the left
                     
+
+                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor {"\n"}
+                    {"\n"}
+                    {"\n"}
+                    </pre>
+                     <center>
+                      <img src={esquematico} width={550} height={350} alt='Large Pizza' />
+                    </center>
+
+
+
+                      Here is an example video: {"\n"} {"\n"}
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/eYn4rW6QfYA?si=kzYI9oo-ECcg0u2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                  
+                  
+                 
                   
                   </p>
 
