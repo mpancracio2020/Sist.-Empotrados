@@ -101,13 +101,12 @@ export default function Projects() {
                   content={
                   <p>
                     In this practice I implement a solution to a vending machine. Using a state machine we get the following result {"\n"}
-
-            
+                    <span> </span>
                     <center>
                       <img src={diagrama} width={350} height={350} alt='Large Pizza' />
                     </center>
 
-          
+                    <span> </span>
                     <center>
                      State diagram {"\n"}
                     </center>
@@ -122,6 +121,7 @@ export default function Projects() {
                   {"\t"}Meanwhile, the client can also reset the services status by pressing the button for 2-3sec.{"\n"}
                   {"\t"}-The admin state is accessed by pressing the button for at least 5 seconds. Once inside, we can display the temperature, distance to the machine, initial program counter and finally modify prices. To access each of these functionalities it is necessary to press the joystick button {"\n"}
                   {"\t"} and to return to the administrator menu, move the joystick to the left.{"\n"}
+                  <span> </span>
                   {"\t"}To use the change price functionality the following is necessary:{"\n"}
 
                         {"\t"}{"\t"}-First unlock the scroll between cafes by moving the joystick to the right.{"\n"}
@@ -132,25 +132,17 @@ export default function Projects() {
                     
 
                     For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor {"\n"}
-                    {"\n"}
-                    {"\n"}
+                    <span> </span>
                     </pre>
                      <center>
                       <img src={esquematico} width={550} height={350} alt='Large Pizza' />
                     </center>
-
-
-
+                      <span> </span>
                       Here is an example video: {"\n"} {"\n"}
                     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/eYn4rW6QfYA?si=kzYI9oo-ECcg0u2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
                   
-                  
-                 
-                  
                   </p>
 
-                  
-                
                     } />
                  
               ))}
