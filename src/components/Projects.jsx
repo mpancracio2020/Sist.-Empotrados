@@ -115,6 +115,7 @@ export default function Projects() {
                      The functionality can be summarized as follows: {"\n"}
                   {"\n"}
                   {"\n"}
+                  <span> </span>
                   {"\t"}-The start state will be the initial one and will show "charging" on the display while LED1 (blue) flashes. {"\n"}
                   {"\t"}-The services state will be waiting for a client close to the machine while showing "waiting for client", once a client is detected it will show the temperature and humidity for 5 seconds, {"\n"}
                   {"\t"}then it will show the coffees that the machine has and their prices, the client must move the joystick to change coffee and press it to prepare it. All this while you are close, if you move away the machine will show "waiting for customer" {"\n"}
