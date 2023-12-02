@@ -117,14 +117,17 @@ export default function Projects() {
                   {"\n"}
                   <span> </span>
                   {"\t"}-The start state will be the initial one and will show "charging" on the display while LED1 (blue) flashes. {"\n"}
+                    <span></span>
                   {"\t"}-The services state will be waiting for a client close to the machine while showing "waiting for client", {"\n"}
                   {"\t"}once a client is detected it will show the temperature and humidity for 5 seconds, {"\n"}
                   {"\t"}then it will show the coffees that the machine has and their prices, the client must move the joystick to change{"\n"}
                   {"\t"}coffee and press it to prepare it. All this while you are close, if you move away the machine will show "waiting for customer" {"\n"}
                   {"\t"}Meanwhile, the client can also reset the services status by pressing the button for 2-3sec.{"\n"}
+                  <span></span>
                   {"\t"}-The admin state is accessed by pressing the button for at least 5 seconds. Once inside, we can display the temperature, distance to the machine, {"\n"}
                   {"\t"}initial program counter and finally modify prices. To access each of these functionalities it is necessary to press the joystick button {"\n"}
                   {"\t"} and to return to the administrator menu, move the joystick to the left.{"\n"}
+                  <span></span>
                   {"\t"}To use the change price functionality the following is necessary:{"\n"}
 
                         {"\t"}{"\t"}-First unlock the scroll between cafes by moving the joystick to the right.{"\n"}
@@ -135,7 +138,7 @@ export default function Projects() {
                         {"\t"}{"\t"}or exit to the administrator menu {"\n"}
                         {"\t"}{"\t"}moving the joystick to the left{"\n"}
                     
-
+                    <span></span>
                     For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick,{"\n"}
                     button, and ultrasonic sensor {"\n"}
                     {"\n"}
