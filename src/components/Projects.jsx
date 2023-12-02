@@ -131,11 +131,13 @@ export default function Projects() {
                         {"\t"}{"\t"}-Second, to select the coffee to modify the price you must press the joystick.{"\n"}
                         {"\t"}{"\t"}-Third increases or decreases the value of the item with the joystick (up/down).{"\n"}
                         {"\t"}{"\t"}-Fourth, to exit the modification mode you must either move the joystick to the left (exit without saving), or press the joystick, {"\n"}
-                        {"\t"}{"\t"}thus causing the changes to be saved and later you can either continue viewing the coffees to be modified or exit to the administrator menu {"\n"}
+                        {"\t"}{"\t"}thus causing the changes to be saved and later you can either continue viewing the coffees to be modified {"\n"}
+                        {"\t"}{"\t"}or exit to the administrator menu {"\n"}
                         {"\t"}{"\t"}moving the joystick to the left{"\n"}
                     
 
-                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick, button, and ultrasonic sensor {"\n"}
+                    For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick,{"\n"}
+                    button, and ultrasonic sensor {"\n"}
                     {"\n"}
                     {"\n"}
                     </pre>
