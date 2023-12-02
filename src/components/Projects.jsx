@@ -135,6 +135,9 @@ export default function Projects() {
                   {"\n"}
                   <span> </span>
                   {"\t"}To use the change price functionality the following is necessary:{"\n"}
+                  {"\n"}
+                  {"\n"}
+                  <span> </span>
 
                         {"\t"}{"\t"}-First unlock the scroll between cafes by moving the joystick to the right.{"\n"}
                         {"\t"}{"\t"}-Second, to select the coffee to modify the price you must press the joystick.{"\n"}
@@ -144,7 +147,9 @@ export default function Projects() {
                         {"\t"}{"\t"}or exit to the administrator menu {"\n"}
                         {"\t"}{"\t"}moving the joystick to the left{"\n"}
                     
-                    <span></span>
+                  {"\n"}
+                  {"\n"}
+                  <span> </span>
                     For the hardware implementation I have used: an LCD display, 2 LEDs, dht11 temperature and humidity sensor, potentiometer, joystick,{"\n"}
                     button, and ultrasonic sensor {"\n"}
                     {"\n"}
